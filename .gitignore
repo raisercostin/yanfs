@@ -1,0 +1,15 @@
+*.class
+*.war
+*.ear
+tmp/*
+dist/*
+reports/*
+out/*
+.svn/*
+/bin/
+.idea/workspace.xml
+target/
+.settings/
+.idea/
+.classpath
+.project

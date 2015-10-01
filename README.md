@@ -1,4 +1,11 @@
 # yanfs
+
+[![Download](https://api.bintray.com/packages/raisercostin/maven/yanfs/images/download.svg)](https://bintray.com/raisercostin/maven/yanfs/_latestVersion)
+[![Build Status](https://travis-ci.org/raisercostin/yanfs.svg?branch=master)](https://travis-ci.org/raisercostin/yanfs)
+<!--
+[![Codacy Badge](https://www.codacy.com/project/badge/fe1bb28a7735433d89a238ce6f6305c1)](https://www.codacy.com/app/raisercostin/yanfs)
+-->
+
 Migrated from https://java.net/projects/yanfs/sources/svn/show
 
 This project represents a Java implementation of the
