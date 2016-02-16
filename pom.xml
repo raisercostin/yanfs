@@ -4,14 +4,14 @@
     <parent>
         <groupId>org.raisercostin.utils</groupId>
         <artifactId>maven-defaults</artifactId>
-        <version>3</version>
+        <version>5</version>
     </parent>
 	<prerequisites>
 		<maven>3.0.4</maven>
 	</prerequisites>
 	<groupId>com.sun</groupId>
 	<artifactId>yanfs</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.3</version>
 	<name>yanfs</name>
 	<description>This project represents a Java implementation of the XDR, RPC, NFSv2, and NFSv3 protocols in client side form. WebNFS was the original name for this implementation but the name has changed to reflect the expanded scope of the project to include a server side implementation. </description>
 	<url>${github.url}</url>
@@ -46,7 +46,7 @@
 		<connection>scm:git:${github.url}.git</connection>
 		<developerConnection>scm:git:${github.url}.git</developerConnection>
 		<url>${github.url}</url>
-		<tag>yanfs-1.2</tag>
+		<tag>yanfs-1.3</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
