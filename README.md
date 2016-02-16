@@ -16,3 +16,22 @@ rel="self">NFSv2</a>, and <a href=
 rel="self">NFSv3</a> protocols in client side form.
 
 WebNFS was the original name for this implementation but the name has changed to reflect the expanded scope of the project to include a server side implementation.
+
+## Maven
+### Dependency
+
+    <dependency>
+      <groupId>com.sun</groupId>
+      <artifactId>yanfs</artifactId>
+      <version>1.3</version>
+    </dependency>
+
+### Repository
+Till the release is added to JCentral you can use this repo
+
+	<repository>
+		<id>raisercostin-bintray</id>
+		<name>Bintray Raisercostin Maven Repository</name>
+		<layout>default</layout>
+		<url>https://dl.bintray.com/raisercostin/maven</url>
+	</repository>
