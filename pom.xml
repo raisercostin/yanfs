@@ -11,7 +11,7 @@
 	</prerequisites>
 	<groupId>com.sun</groupId>
 	<artifactId>yanfs</artifactId>
-	<version>1.3</version>
+	<version>1.3-SNAPSHOT</version>
 	<name>yanfs</name>
 	<description>This project represents a Java implementation of the XDR, RPC, NFSv2, and NFSv3 protocols in client side form. WebNFS was the original name for this implementation but the name has changed to reflect the expanded scope of the project to include a server side implementation. </description>
 	<url>${github.url}</url>
