@@ -27,11 +27,13 @@ WebNFS was the original name for this implementation but the name has changed to
     </dependency>
 
 ### Repository
-Till the release is added to JCentral you can use this repo
+The release is hosted at JCentral (http://jcenter.bintray.com/com/sun/yanfs/1.3/) which is usually included by recent maven releases. If not use:
 
 	<repository>
-		<id>raisercostin-bintray</id>
-		<name>Bintray Raisercostin Maven Repository</name>
-		<layout>default</layout>
-		<url>https://dl.bintray.com/raisercostin/maven</url>
+		<id>bintray-jcenter</id>
+		<name>bintray</name>
+		<url>http://jcenter.bintray.com</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
 	</repository>
