@@ -8,7 +8,7 @@
   </parent>
   <groupId>com.sun</groupId>
   <artifactId>yanfs</artifactId>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <name>yanfs</name>
   <description>This project represents a Java implementation of the XDR, RPC, NFSv2, and NFSv3 protocols in client side form. WebNFS was the original name for this implementation but the name has changed to reflect the expanded scope of the project to include a server side implementation. </description>
   <url>${git.url}</url>
@@ -16,7 +16,7 @@
     <connection>scm:git:${git.url}.git</connection>
     <developerConnection>scm:git:${git.url}.git</developerConnection>
     <url>${git.url}</url>
-    <tag>yanfs-1.4</tag>
+    <tag>${project.artifactId}-${project.version}</tag>
   </scm>
   <distributionManagement>
     <repository>
