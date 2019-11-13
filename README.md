@@ -18,22 +18,19 @@ rel="self">NFSv3</a> protocols in client side form.
 WebNFS was the original name for this implementation but the name has changed to reflect the expanded scope of the project to include a server side implementation.
 
 ## Maven
+
 ### Dependency
 
-    <dependency>
-      <groupId>com.sun</groupId>
-      <artifactId>yanfs</artifactId>
-      <version>1.3</version>
-    </dependency>
+```
+<dependency>
+  <groupId>com.sun</groupId>
+  <artifactId>yanfs</artifactId>
+  <version>1.4</version>
+</dependency>
+```
 
-### Repository
-The release is hosted at JCentral (http://jcenter.bintray.com/com/sun/yanfs/1.3/) which is usually included by recent maven releases. If not use:
+No need to include a repository as is available at https://jcenter.bintray.com/com/sun/yanfs/
 
-	<repository>
-		<id>bintray-jcenter</id>
-		<name>bintray</name>
-		<url>http://jcenter.bintray.com</url>
-		<snapshots>
-			<enabled>false</enabled>
-		</snapshots>
-	</repository>
+# Development
+- To release
+  `mvn release:prepare release:perform -DskipTests=true -Prelease -Darguments="-DskipTests=true -Prelease"` 
