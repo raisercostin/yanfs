@@ -251,12 +251,12 @@ public abstract class Nfs {
              * to for the entire file.
              */
             if (bufferList == null)
-                bufferList = new Buffer[(int) length() / rsize + 1];
+                bufferList = new Buffer[(int) (length() / rsize + 1)];
 
 	    /*
 	     * Find the block that holds the data
 	     */
-            index = (int) foffset / rsize;
+            index = (int) (foffset / rsize);
             if (index > maxIndexRead)
                 maxIndexRead = index;
 
@@ -298,7 +298,7 @@ public abstract class Nfs {
 
                 b = bufferList[n];
                 if (b == null) {
-                    b = new Buffer(this, n * rsize, rsize);
+                    b = new Buffer(this, (long) n * (long) rsize, rsize);
                     b.startLoad();
                     bufferList[n] = b;
                 }
@@ -324,7 +324,7 @@ public abstract class Nfs {
                 if (n.error == 72) { // DEC's EBADRPC
                     rsize = 8192;
                     bufferList = 
-                        new Buffer[(int) length() / rsize + 1];
+                        new Buffer[(int)(length() / rsize + 1)];
                     continue;
                 }
 
@@ -349,7 +349,7 @@ public abstract class Nfs {
 	    /*
 	     * Copy data from the file buffer into the application buffer.
 	     */
-            int cc = b.copyFrom(buf, boff, foffset, length);
+            int cc = b.copyFrom(buf, boff, foffset,length);
 
             boff += cc;
             foffset += cc;
@@ -422,7 +422,7 @@ public abstract class Nfs {
          */
         if (bufferList == null) {
             long fileSize = Math.max(length(), 50 * wsize);
-            bufferList = new Buffer[(int) fileSize / wsize + 1];
+            bufferList = new Buffer[(int)(fileSize / wsize + 1)];
         }
 
         /*
@@ -443,7 +443,7 @@ public abstract class Nfs {
 	 */
         while (length > 0) {
 
-            int index = (int) foffset / wsize;
+            int index = (int)(foffset / wsize);
 
             /*
              * If writing into a new buffer
