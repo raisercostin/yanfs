@@ -91,7 +91,7 @@ public class Buffer extends Thread {
     final static int DIRTY  = 2;	// Has new data
     final static int COMMIT = 3;	// Not committed
 
-    public Buffer(Nfs nfs, int foffset, int bufsize) {
+    public Buffer(Nfs nfs, long foffset, int bufsize) {
         this.nfs = nfs;
         this.foffset = foffset;
         this.bufsize = bufsize;
@@ -144,7 +144,7 @@ public class Buffer extends Thread {
      
         int off = (int) (foffset - this.foffset);
         int copylen = Math.min(length, buflen - off);
-        copylen = Math.min(copylen, (int) (nfs.length() - foffset));
+        copylen = (int) Math.min((long)copylen, nfs.length() - foffset);
 
         System.arraycopy(buf, bufoff + off, buff, boff, copylen);
 
