@@ -29,7 +29,14 @@ WebNFS was the original name for this implementation but the name has changed to
 </dependency>
 ```
 
-No need to include a repository as is available at https://jcenter.bintray.com/com/sun/yanfs/
+Repository
+```
+<repository>
+  <id>raisercostin-github</id>
+  <url>https://raw.githubusercontent.com/raisercostin/maven-repo/master/</url>
+  <snapshots><enabled>false</enabled></snapshots>
+</repository>
+```
 
 # Development
 - To release
