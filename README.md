@@ -1,6 +1,6 @@
 # yanfs
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=raisercostin_yanfs&metric=alert_status)](https://sonarcloud.io/dashboard?id=raisercostin_yanfs)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=raisercostin_yanfs)
 [![Download](https://api.bintray.com/packages/raisercostin/maven/yanfs/images/download.svg)](https://bintray.com/raisercostin/maven/yanfs/_latestVersion)
 [![Build Status](https://travis-ci.org/raisercostin/yanfs.svg?branch=master)](https://travis-ci.org/raisercostin/yanfs)
 <!--
