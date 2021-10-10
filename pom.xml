@@ -52,10 +52,8 @@
     <target.java.version>1.7</target.java.version>
     <source.java.version>1.7</source.java.version>
     <target.jvm.version>1.7</target.jvm.version>
-
-
-
-
+    <sonar.organization>raisercostin</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <licenses>
     <license>
